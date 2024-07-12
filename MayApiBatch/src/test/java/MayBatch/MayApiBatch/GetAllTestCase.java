@@ -12,9 +12,10 @@ public class GetAllTestCase {
 		
 		Response res = 
 				given()
-				.contentType(ContentType.JSON)
+					.contentType(ContentType.JSON)
 				.when()
-				.get("http://localhost:3000/APIStudents/290c");
+					.get("http://localhost:3000/APIStudents/290c");
+		
 				System.out.println("status code is");
 				System.out.println(res.statusCode());
 				System.out.println("the response is ");
